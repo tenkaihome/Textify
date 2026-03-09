@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA0bb9O3EJt6cOfC2P8PbkIxBlJF-erg7I",
-  authDomain: "unichat-acfc2.firebaseapp.com",
-  databaseURL: "https://unichat-acfc2-default-rtdb.firebaseio.com",
-  projectId: "unichat-acfc2",
-  storageBucket: "unichat-acfc2.firebasestorage.app",
-  messagingSenderId: "682268649138",
-  appId: "1:682268649138:web:472743c5bd5a074ddf4bab",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
   measurementId: "G-9HJ9M43ZC1"
 };
 
